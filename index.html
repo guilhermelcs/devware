@@ -17,9 +17,56 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
+<!-- Navbar Menu -->
+    <nav class="navbar-menu pt-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-10 offset-lg-1">
+                    <div class="logo-wrapper">
+                        <img src="assets/img/logo.png" alt="Devware" class="logo-img">
+                    </div>
+                    <div class="menu-icon-wrapper">
+                        <img id="menu-icon" src="assets/img/menu-button.png" alt="Menu" class="menu-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-cover">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <ul class="menu-list text-center">
+                            <div class="menu-icon-wrapper">
+                                <img src="assets/img/menu-button-dark.png" alt="Menu" class="menu-icon">
+                            </div>
+                            <li class="menu-list-item">
+                                <a href="#home">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#beneficios">
+                                    Benefícios
+                                </a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#sobre">
+                                    Sobre Nós
+                                </a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#contato">
+                                    Contato
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
 <!-- Section Welcome -->
-    <section class="section-welcome">
+    <section id="home" class="section-welcome">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-6 black-bg d-flex align-items-center">
@@ -37,11 +84,11 @@
     </section>
 
 <!-- Section Pesquisa -->
-    <section class="section-pesquisa py-5">
+    <section id="beneficios" class="section-pesquisa py-5">
         <div class="container-fluid pb-5">
             <div class="row">
                 <div class="col-12 col-lg-12 mb-5">
-                    <h1 class="pesquisa-title text-center">Porquê ter um site premium</h1>
+                    <h1 class="pesquisa-title text-center">Por que ter um site premium</h1>
                     <p class="pesquisa-description text-center pb-4">
                         Uma pesquisa realizada pela Universidade Standford mostrou que
                     </p>
@@ -87,13 +134,13 @@
     </section>
 
 <!-- Section Marcante -->
-    <section class="section-marcante">
+    <section class="section-marcante parallax">
         <div class="container-fluid">
             <div class="row vh-100">
                 <div class="d-none d-lg-block col-lg-1"></div>
                 <div class="col-12 col-lg-10 my-auto d-flex align-items-center">
                     <div class="marcante-text-wrapper">
-                        <h1 class="marcante-title"><span class="underline white"></span>Marcante</h1>
+                        <h1 class="marcante-title"><span class="underline white">#</span>Marcante</h1>
                         <h2 class="marcante-description">
                             Dê á sua empresa primeiras <br class="d-none d-lg-block">
                             impressões marcantes e <br class="d-none d-lg-block">
@@ -112,7 +159,7 @@
                 <div class="d-none d-lg-block col-lg-1"></div>
                 <div class="col-12 col-lg-10 my-auto d-flex align-items-center">
                     <div class="marcante-text-wrapper">
-                        <h1 class="experiencia-title"><span class="underline black"></span>Experiência</h1>
+                        <h1 class="experiencia-title"><span class="underline black">#</span>Experiência</h1>
                         <h2 class="experiencia-description">
                             Dê aos seus usuários <br class="d-none d-lg-block">
                             experiências fluidas e bem <br class="d-none d-lg-block">
@@ -125,20 +172,91 @@
     </section>
 
 <!-- Section Minimalista -->
-    <section class="section-minimalista">
+    <section class="section-minimalista parallax">
         <div class="container-fluid">
             <div class="row vh-100">
                 <div class="d-none d-lg-block col-lg-1"></div>
                 <div class="col-12 col-lg-10 my-auto d-flex align-items-center">
                     <div class="marcante-text-wrapper">
-                        <h1 class="minimalista-title"><span class="underline white"></span>Minimalista</h1>
+                        <h1 class="minimalista-title"><span class="underline white">#</span>Minimalista</h1>
                         <h2 class="minimalista-description">
-                            Dê aos seus usuários <br class="d-none d-lg-block">
-                            experiências fluidas e bem <br class="d-none d-lg-block">
-                            planejadas.</h2>
+                            Com um aspecto minimalista, <br class="d-none d-lg-block">
+                            toda a sua credibilidade <br class="d-none d-lg-block">
+                            será passada de forma limpa.
+                        </h2>
                     </div>
                 </div>
                 <div class="d-none d-lg-block col-lg-1"></div>
+            </div>
+        </div>
+    </section>
+
+<!-- Section TimeLine -->
+    <section id="sobre" class="section-timeline py-5">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-10 offset-lg-1">
+                    <h1 class="timeline-main-title">Sobre a Devware</h1>
+                    <ul class="timeline mt-5">
+                    <!-- Multiplataforma -->
+                        <li class="mt-5">
+                            <div class="row">
+                                <div class="col-12 col-lg-4 d-flex align-items-center">
+                                    <div class="timeline-text-wrapper">
+                                        <h1 class="timeline-title">Multiplataforma</h1>
+                                        <p class="timeline-description">
+                                            Nosso objetivo é entregar a grandes empresas produtos digitais 
+                                            de alta qualidade, altamente funcionais em <b>quaisquer dispositivos</b>.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="timeline-image-wrapper">
+                                       <img src="assets/img/timeline-img-1.png" alt="Funciona em qualquer dispositivo" class="timeline-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Garantia -->
+                        <li class="mt-5 pt-5">
+                            <div class="row">
+                                <div class="col-12 col-lg-4 offset-lg-4">
+                                    <div class="timeline-image-wrapper">
+                                       <img src="assets/img/timeline-img-2.png" alt="Funciona em qualquer dispositivo" class="timeline-image">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4 d-flex align-items-center">
+                                    <div class="timeline-text-wrapper">
+                                        <h1 class="timeline-title">Garantia</h1>
+                                        <p class="timeline-description">
+                                            A Devware se predispõe a garantir a qualidade do produto entregue, 
+                                            dando a você uma <b>garantia de 7 dias</b> caso suas expectativas não sejam 
+                                            correspondidas.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Metodologia -->
+                        <li class="mt-5 pt-5">
+                            <div class="row">
+                                <div class="col-12 col-lg-4 d-flex align-items-center">
+                                    <div class="timeline-text-wrapper">
+                                        <h1 class="timeline-title">Metodologia</h1>
+                                        <p class="timeline-description">
+                                            Como parte da nossa metodologia, iremos te entregar um produto simples, lindo e que passe <b>credibilidade</b> para a sua marca.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="timeline-image-wrapper">
+                                       <img src="assets/img/timeline-img-3.png" alt="Funciona em qualquer dispositivo" class="timeline-image">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
