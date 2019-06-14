@@ -46,12 +46,10 @@ $( 'document' ).ready(function() {
     $( window ).scroll( function() {
         let wpp_btn_position = $('#whatsapp-btn').offset().top;
         if( wpp_btn_position > div_sobre_position) {
-            console.log('maior')
             $('#whatsapp-btn').css('opacity', 1);
             $('#whatsapp-btn').css('pointerEvents', 'auto');
         }
         else {
-            console.log('menor')
             $('#whatsapp-btn').css('opacity', 0);
             $('#whatsapp-btn').css('pointerEvents', 'none');
         }
