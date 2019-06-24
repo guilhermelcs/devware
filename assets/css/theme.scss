@@ -1,0 +1,19 @@
+$roboto : 'Roboto', sans-serif;
+$preto : #171717;
+
+@mixin background-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.welcome-title {
+    font-family: $roboto;
+    color: $preto;
+}
+
+
+.fundo-da-secao {
+    background-image: url('../img/bg-man.jpg');
+    @include background-cover;
+}

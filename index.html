@@ -17,13 +17,15 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<!-- Navbar Menu -->
-    <nav class="navbar-menu pt-4">
+<!-- (Desktop) Navbar Menu -->
+    <nav class="d-none d-lg-block navbar-menu pt-4">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-lg-10 offset-lg-1">
                     <div class="logo-wrapper">
-                        <img src="assets/img/logo.png" alt="Devware" class="logo-img">
+                        <a href="/">
+                            <img src="assets/img/logo.png" alt="Devware" class="logo-img">
+                        </a>
                     </div>
                     <div class="menu-icon-wrapper">
                         <img id="menu-icon" src="assets/img/menu-button.png" alt="Menu" class="menu-icon">
@@ -35,11 +37,63 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="menu-icon-wrapper">
+                            <img src="assets/img/menu-button-dark.png" alt="Menu" class="menu-icon">
+                        </div>
                         <ul class="menu-list text-center">
-                            <div class="menu-icon-wrapper">
-                                <img src="assets/img/menu-button-dark.png" alt="Menu" class="menu-icon">
-                            </div>
+                            <li class="menu-list-item first-of-menu">
+                                <a href="#home">
+                                    Home
+                                </a>
+                            </li>
                             <li class="menu-list-item">
+                                <a href="#beneficios">
+                                    Benefícios
+                                </a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#sobre">
+                                    Sobre Nós
+                                </a>
+                            </li>
+                            <li class="menu-list-item">
+                                <a href="#contato">
+                                    Contato
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!-- (Mobile) Navbar Menu -->
+    <nav id="nav-mobile" class="d-block d-lg-none navbar-menu pt-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-lg-10 offset-lg-1">
+                    <div class="logo-wrapper">
+                        <a href="/">
+                            <img src="assets/img/logo.png" alt="Devware" class="logo-img">
+                        </a>
+                    </div>
+                    <div class="menu-icon-wrapper">
+                        <img id="menu-icon-mobile" src="assets/img/menu-button.png" alt="Menu" class="menu-icon">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-none menu-cover-mobile-background"></div>
+        <div class="menu-cover-mobile">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-lg-10 offset-lg-1">
+                        <div class="menu-icon-wrapper">
+                            <img src="assets/img/menu-button-dark.png" alt="Menu" class="menu-icon">
+                        </div>
+                        <ul class="menu-list-mobile text-center">
+                            <li class="menu-list-item first-of-menu">
                                 <a href="#home">
                                     Home
                                 </a>
@@ -67,15 +121,15 @@
     </nav>
 <!-- Section Welcome -->
     <section id="home" class="section-welcome">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6 black-bg d-flex align-items-center">
+        <div class="container-fluid">
+            <div class="row mt-n1 mt-lg-0">
+                <div class="col-12 col-lg-10 offset-lg-1 black-bg d-flex align-items-center">
                     <div class="welcome-text-wrapper">
                         <h1 class="welcome-title">Bem-Vindo ao Futuro</h1>
                         <p class="welcome-description">
-                            Descubra como iremos fazer sua empresa <br class="d-none d-lg-block"> 
-                            alcançar mais pessoas e mostrar de uma vez <br class="d-none d-lg-block">
-                            por todas seu potencial.
+                            Faça uma <b>consultoria de graça</b> e descubra <br class="d-none d-lg-block"> 
+                            como iremos fazer o site da sua empresa <br class="d-none d-lg-block">
+                            ter mais visibilidade e credibilidade! 
                         </p>
                     </div>
                 </div>
@@ -84,21 +138,21 @@
     </section>
 
 <!-- Section Pesquisa -->
-    <section id="beneficios" class="section-pesquisa py-5">
+    <section id="beneficios" class="section-pesquisa py-4 py-lg-5">
         <div class="container-fluid pb-5">
             <div class="row">
-                <div class="col-12 col-lg-12 mb-5">
+                <div class="col-10 offset-1 offset-lg-0 col-lg-12 mb-0 mb-lg-5">
                     <h1 class="pesquisa-title text-center">Por que ter um site premium</h1>
-                    <p class="pesquisa-description text-center pb-4">
+                    <p class="pesquisa-description text-center pb-lg-4">
                         Uma pesquisa realizada pela Universidade Standford mostrou que
                     </p>
                 </div>
                 <div class="d-none d-lg-block col-lg-1"></div>
-                <div class="col-12 col-lg-10 mt-5 mb-5 pb-5 pt-5">
+                <div class="col-10 offset-1 offset-lg-0 col-lg-10 mt-lg-5 mb-lg-5 pb-lg-5 pt-5">
                     <div class="row">
-                        <div class="col-12 col-lg-4 d-flex justify-content-center">
+                        <div class="col-12 col-lg-4 d-flex justify-content-center mb-5 mb-lg-0">
                             <div>
-                                <h1 class="pesquisa-porcentagem mb-4">90%</h1>
+                                <h1 class="pesquisa-porcentagem mb-lg-4">90%</h1>
                                 <h2 class="pesquisa-text">
                                     das primeiras impressões <br class="d-none d-lg-block">
                                     estão ligadas à beleza e <br class="d-none d-lg-block">
@@ -106,9 +160,9 @@
                                 </h2>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-4 d-flex justify-content-center">
+                        <div class="col-12 col-lg-4 d-flex justify-content-center mb-5 mb-lg-0">
                             <div>
-                                <h1 class="pesquisa-porcentagem mb-4">88%</h1>
+                                <h1 class="pesquisa-porcentagem mb-lg-4">88%</h1>
                                 <h2 class="pesquisa-text">
                                     admitiram não retornar  <br class="d-none d-lg-block">
                                     após uma experiência <br class="d-none d-lg-block">
@@ -116,9 +170,9 @@
                                 </h2>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-4 d-flex justify-content-center">
+                        <div class="col-12 col-lg-4 d-flex justify-content-center mb-lg-0">
                             <div>
-                                <h1 class="pesquisa-porcentagem mb-4">75%</h1>
+                                <h1 class="pesquisa-porcentagem mb-lg-4">75%</h1>
                                 <h2 class="pesquisa-text">
                                     julgam a credibilidade <br class="d-none d-lg-block">
                                     de uma empresa pelo <br class="d-none d-lg-block">
@@ -133,8 +187,8 @@
         </div>
     </section>
 
-<!-- Section Marcante -->
-    <section class="section-marcante parallax">
+<!-- (Desktop) Section Marcante -->
+    <section class="d-none d-lg-block section-marcante parallax">
         <div class="container-fluid">
             <div class="row vh-100">
                 <div class="d-none d-lg-block col-lg-1"></div>
@@ -152,8 +206,27 @@
         </div>
     </section>
 
-<!-- Section Experiência -->
-    <section class="section-experiencia">
+<!-- (Mobile) Section Marcante -->
+    <section class="d-block d-lg-none section-marcante">
+        <div class="container-fluid">
+            <div class="row vh-100">
+                <div class="d-none d-lg-block col-lg-1"></div>
+                <div class="col-12 col-lg-10 my-auto d-flex align-items-center">
+                    <div class="marcante-text-wrapper">
+                        <h1 class="marcante-title"><span class="underline white">#</span>Marcante</h1>
+                        <h2 class="marcante-description mb-0">
+                            Dê á sua empresa primeiras <br class="d-none d-lg-block">
+                            impressões marcantes e <br class="d-none d-lg-block">
+                            inesquecíveis.</h2>
+                    </div>
+                </div>
+                <div class="d-none d-lg-block col-lg-1"></div>
+            </div>
+        </div>
+    </section>
+
+<!-- (Desktop) Section Experiência -->
+    <section class="d-none d-lg-block section-experiencia">
         <div class="container-fluid">
             <div class="row vh-100">
                 <div class="d-none d-lg-block col-lg-1"></div>
@@ -171,8 +244,27 @@
         </div>
     </section>
 
-<!-- Section Minimalista -->
-    <section class="section-minimalista parallax">
+<!-- (Mobile) Section Experiência -->
+    <section class="d-block d-lg-none section-experiencia">
+        <div class="container-fluid">
+            <div class="row vh-100">
+                <div class="d-none d-lg-block col-lg-1"></div>
+                <div class="col-12 col-lg-10 my-auto d-flex align-items-center">
+                    <div class="marcante-text-wrapper">
+                        <h1 class="experiencia-title"><span class="underline black">#</span>Experiência</h1>
+                        <h2 class="experiencia-description mb-0">
+                            Dê aos seus usuários <br class="d-none d-lg-block">
+                            experiências fluidas e bem <br class="d-none d-lg-block">
+                            planejadas.</h2>
+                    </div>
+                </div>
+                <div class="d-none d-lg-block col-lg-1"></div>
+            </div>
+        </div>
+    </section>
+
+<!-- (Desktop) Section Minimalista -->
+    <section class="d-none d-lg-block section-minimalista parallax">
         <div class="container-fluid">
             <div class="row vh-100">
                 <div class="d-none d-lg-block col-lg-1"></div>
@@ -180,6 +272,26 @@
                     <div class="marcante-text-wrapper">
                         <h1 class="minimalista-title"><span class="underline white">#</span>Minimalista</h1>
                         <h2 class="minimalista-description">
+                            Com um aspecto minimalista, <br class="d-none d-lg-block">
+                            toda a sua credibilidade <br class="d-none d-lg-block">
+                            será passada de forma limpa.
+                        </h2>
+                    </div>
+                </div>
+                <div class="d-none d-lg-block col-lg-1"></div>
+            </div>
+        </div>
+    </section>
+
+<!-- (Mobile) Section Minimalista -->
+    <section class="d-block d-lg-none section-minimalista">
+        <div class="container-fluid">
+            <div class="row vh-100">
+                <div class="d-none d-lg-block col-lg-1"></div>
+                <div class="col-12 col-lg-10 col-lg-10 my-auto d-flex align-items-center">
+                    <div class="marcante-text-wrapper">
+                        <h1 class="minimalista-title"><span class="underline white">#</span>Minimalista</h1>
+                        <h2 class="minimalista-description mb-0 pr-5">
                             Com um aspecto minimalista, <br class="d-none d-lg-block">
                             toda a sua credibilidade <br class="d-none d-lg-block">
                             será passada de forma limpa.
@@ -201,34 +313,34 @@
                     <!-- Multiplataforma -->
                         <li class="mt-5">
                             <div class="row">
-                                <div class="col-12 col-lg-4 d-flex align-items-center">
+                                <div class="col-12 col-lg-4 order-2 order-lg-1 d-flex align-items-center">
                                     <div class="timeline-text-wrapper">
-                                        <h1 class="timeline-title">Multiplataforma</h1>
-                                        <p class="timeline-description">
+                                        <h1 class="timeline-title text-center text-lg-left">Multiplataforma</h1>
+                                        <p class="timeline-description text-center text-lg-left">
                                             Nosso objetivo é entregar a grandes empresas produtos digitais 
                                             de alta qualidade, altamente funcionais em <b>quaisquer dispositivos</b>.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-4">
-                                    <div class="timeline-image-wrapper">
+                                <div class="col-12 col-lg-4 order-lg-2">
+                                    <div class="timeline-image-wrapper mb-3 mb-lg-auto">
                                        <img src="assets/img/timeline-img-1.png" alt="Funciona em qualquer dispositivo" class="timeline-image">
                                     </div>
                                 </div>
                             </div>
                         </li>
                         <!-- Garantia -->
-                        <li class="mt-5 pt-5">
+                        <li class="mt-lg-5 pt-5">
                             <div class="row">
                                 <div class="col-12 col-lg-4 offset-lg-4">
-                                    <div class="timeline-image-wrapper">
+                                    <div class="timeline-image-wrapper mb-3 mb-lg-auto">
                                        <img src="assets/img/timeline-img-2.png" alt="Funciona em qualquer dispositivo" class="timeline-image">
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-4 d-flex align-items-center">
                                     <div class="timeline-text-wrapper">
-                                        <h1 class="timeline-title">Garantia</h1>
-                                        <p class="timeline-description">
+                                        <h1 class="timeline-title text-center text-lg-left">Garantia</h1>
+                                        <p class="timeline-description text-center text-lg-left">
                                             A Devware se predispõe a garantir a qualidade do produto entregue, 
                                             dando a você uma <b>garantia de 7 dias</b> caso suas expectativas não sejam 
                                             correspondidas.
@@ -238,18 +350,18 @@
                             </div>
                         </li>
                         <!-- Metodologia -->
-                        <li class="mt-5 pt-5">
+                        <li class="mt-lg-5 pt-5">
                             <div class="row">
-                                <div class="col-12 col-lg-4 d-flex align-items-center">
+                                <div class="col-12 col-lg-4 order-2 order-lg-1 d-flex align-items-center">
                                     <div class="timeline-text-wrapper">
-                                        <h1 class="timeline-title">Metodologia</h1>
-                                        <p class="timeline-description">
+                                        <h1 class="timeline-title text-center text-lg-left">Metodologia</h1>
+                                        <p class="timeline-description text-center text-lg-left">
                                             Como parte da nossa metodologia, iremos te entregar um produto simples, lindo e que passe <b>credibilidade</b> para a sua marca.
                                         </p>
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-4">
-                                    <div class="timeline-image-wrapper">
+                                <div class="col-12 col-lg-4 order-lg-2">
+                                    <div class="timeline-image-wrapper mb-3 mb-lg-auto">
                                        <img src="assets/img/timeline-img-3.png" alt="Funciona em qualquer dispositivo" class="timeline-image">
                                     </div>
                                 </div>
@@ -262,47 +374,16 @@
     </section>
 
 <!-- Section Contato -->
-    <section id="contato" class="section-contato">
+    <section id="contato" class="section-contato py-5">
         <div class="container-fluid">
             <div class="row mt-4 mb-4">
                 <div class="col-12 col-lg-10 offset-lg-1">
                     <h1 class="contato-title">Vamos construir algo incrível juntos?</h1>
-                    <div class="row">
-                        <div class="col-12 col-lg-4 mt-4">
-                            <form action="#" method="POST" class="needs-validation mt-5 mb-4" novalidate autocomplete="off">
-                                <input value="" type="hidden" autocomplete="off">
-                                <div class="form-group">
-                                    <label for="nome" class="form-label mb-0">Seu nome</label>
-                                    <input type="text" class="form-control input" name="nome" id="nome" required>
-                                    <div class="invalid-feedback">
-                                        Ops, preciso do seu nome para fecharmos negócio!
-                                    </div>
-                                </div>
-                                <div class="form-group mt-4 pt-2">
-                                    <label for="email" class="form-label mb-0">Seu email</label>
-                                    <input type="email" class="form-control input" name="email" id="email" required>
-                                    <div class="invalid-feedback">
-                                        Ops, preciso do seu email para trocarmos mensagem!
-                                    </div>
-                                </div>
-                                <div class="form-group mt-4 pt-2">
-                                    <label for="telefone" class="form-label mb-0">Seu telefone</label>
-                                    <input type="telephone" class="form-control input" name="telefone" id="telefone" required>
-                                    <div class="invalid-feedback">
-                                        Ops, preciso do seu telefone para eu te ligar caso alguma coisa aconteça!
-                                    </div>
-                                </div>
-                                <div class="form-group mt-4 pt-2">
-                                    <label for="mensagem" class="form-label mb-0">Como posso te ajudar?</label>
-                                    <textarea id="message-box" class="form-control input" name="mensagem" rows="1" maxlength="2320" required></textarea>
-                                    <div class="invalid-feedback">
-                                        Ops, preciso saber mais para te ajudar da melhor maneira possível!
-                                    </div>
-                                </div>
-
-                                <button class="btn form-btn mt-4">Enviar</button>
-                            </form>
-                        </div>
+                </div>
+            </div>
+                <div class="row section-form-row align-items-center">
+                    <div class="col-12 col-lg-4 offset-lg-4 text-center mt-4">
+                        <button class="modal-form-btn" data-toggle="modal" data-target="#modal-form">Sim, vamos fazer isto!</button>
                     </div>
                 </div>
             </div>
@@ -315,6 +396,61 @@
             <img class="wpp-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDkwIDkwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA5MCA5MDsiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxnPgoJPHBhdGggaWQ9IldoYXRzQXBwIiBkPSJNOTAsNDMuODQxYzAsMjQuMjEzLTE5Ljc3OSw0My44NDEtNDQuMTgyLDQzLjg0MWMtNy43NDcsMC0xNS4wMjUtMS45OC0yMS4zNTctNS40NTVMMCw5MGw3Ljk3NS0yMy41MjIgICBjLTQuMDIzLTYuNjA2LTYuMzQtMTQuMzU0LTYuMzQtMjIuNjM3QzEuNjM1LDE5LjYyOCwyMS40MTYsMCw0NS44MTgsMEM3MC4yMjMsMCw5MCwxOS42MjgsOTAsNDMuODQxeiBNNDUuODE4LDYuOTgyICAgYy0yMC40ODQsMC0zNy4xNDYsMTYuNTM1LTM3LjE0NiwzNi44NTljMCw4LjA2NSwyLjYyOSwxNS41MzQsNy4wNzYsMjEuNjFMMTEuMTA3LDc5LjE0bDE0LjI3NS00LjUzNyAgIGM1Ljg2NSwzLjg1MSwxMi44OTEsNi4wOTcsMjAuNDM3LDYuMDk3YzIwLjQ4MSwwLDM3LjE0Ni0xNi41MzMsMzcuMTQ2LTM2Ljg1N1M2Ni4zMDEsNi45ODIsNDUuODE4LDYuOTgyeiBNNjguMTI5LDUzLjkzOCAgIGMtMC4yNzMtMC40NDctMC45OTQtMC43MTctMi4wNzYtMS4yNTRjLTEuMDg0LTAuNTM3LTYuNDEtMy4xMzgtNy40LTMuNDk1Yy0wLjk5My0wLjM1OC0xLjcxNy0wLjUzOC0yLjQzOCwwLjUzNyAgIGMtMC43MjEsMS4wNzYtMi43OTcsMy40OTUtMy40Myw0LjIxMmMtMC42MzIsMC43MTktMS4yNjMsMC44MDktMi4zNDcsMC4yNzFjLTEuMDgyLTAuNTM3LTQuNTcxLTEuNjczLTguNzA4LTUuMzMzICAgYy0zLjIxOS0yLjg0OC01LjM5My02LjM2NC02LjAyNS03LjQ0MWMtMC42MzEtMS4wNzUtMC4wNjYtMS42NTYsMC40NzUtMi4xOTFjMC40ODgtMC40ODIsMS4wODQtMS4yNTUsMS42MjUtMS44ODIgICBjMC41NDMtMC42MjgsMC43MjMtMS4wNzUsMS4wODItMS43OTNjMC4zNjMtMC43MTcsMC4xODItMS4zNDQtMC4wOS0xLjg4M2MtMC4yNy0wLjUzNy0yLjQzOC01LjgyNS0zLjM0LTcuOTc3ICAgYy0wLjkwMi0yLjE1LTEuODAzLTEuNzkyLTIuNDM2LTEuNzkyYy0wLjYzMSwwLTEuMzU0LTAuMDktMi4wNzYtMC4wOWMtMC43MjIsMC0xLjg5NiwwLjI2OS0yLjg4OSwxLjM0NCAgIGMtMC45OTIsMS4wNzYtMy43ODksMy42NzYtMy43ODksOC45NjNjMCw1LjI4OCwzLjg3OSwxMC4zOTcsNC40MjIsMTEuMTEzYzAuNTQxLDAuNzE2LDcuNDksMTEuOTIsMTguNSwxNi4yMjMgICBDNTguMiw2NS43NzEsNTguMiw2NC4zMzYsNjAuMTg2LDY0LjE1NmMxLjk4NC0wLjE3OSw2LjQwNi0yLjU5OSw3LjMxMi01LjEwN0M2OC4zOTgsNTYuNTM3LDY4LjM5OCw1NC4zODYsNjguMTI5LDUzLjkzOHoiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIGNsYXNzPSJhY3RpdmUtcGF0aCIgc3R5bGU9ImZpbGw6I0ZGRkZGRiIgZGF0YS1vbGRfY29sb3I9IiNmZmZmZmYiPjwvcGF0aD4KPC9nPjwvZz4gPC9zdmc+" />            <p class="wpp-text">Enviar mensagem</p>
         </div>
     </a>
+
+<!-- Section Footer -->
+    <section id="footer" class="footer-section py-3">
+        <div class="footer-text-wrapper text-center text-dark">
+            Copyright 2019 - Devware - Todos os Direitos Reservados
+        </div>
+    </section>
+
+<!-- Modal do Formulário -->
+    <div class="modal fade" id="modal-form" tabindex="-1" role="dialog" aria-labelledby="modal-form" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body p-5">
+                    <span class="close-icon" data-dismiss="modal">x</span>
+                    <h1 class="modal-form-title text-center">Faça a avaliação <b>gratuita</b>!</h1>
+                    <form action="#" method="POST" class="needs-validation mt-5 mb-4" novalidate autocomplete="off">
+                        <input value="" type="hidden" autocomplete="off">
+                        <div class="form-group">
+                            <label for="nome" class="form-label mb-0">Seu nome</label>
+                            <input type="text" class="form-control input" name="nome" id="nome" required>
+                            <div class="invalid-feedback">
+                                Ops, preciso do seu nome para fecharmos negócio!
+                            </div>
+                        </div>
+                        <div class="form-group mt-4 pt-2">
+                            <label for="email" class="form-label mb-0">Seu email</label>
+                            <input type="email" class="form-control input" name="email" id="email" required>
+                            <div class="invalid-feedback">
+                                Ops, preciso do seu email para trocarmos mensagem!
+                            </div>
+                        </div>
+                        <div class="form-group mt-4 pt-2">
+                            <label for="telefone" class="form-label mb-0">Seu telefone</label>
+                            <input type="telephone" class="form-control input" name="telefone" id="telefone" required>
+                            <div class="invalid-feedback">
+                                Ops, preciso do seu telefone para eu te ligar caso alguma coisa aconteça!
+                            </div>
+                        </div>
+                        <div class="form-group mt-4 pt-2">
+                            <label for="mensagem" class="form-label mb-0">Como posso te ajudar?</label>
+                            <textarea id="message-box" class="form-control input" name="mensagem" rows="1" maxlength="2320" required></textarea>
+                            <div class="invalid-feedback">
+                                Ops, preciso saber mais para te ajudar da melhor maneira possível!
+                            </div>
+                        </div>
+                    
+                        <button class="btn form-btn mt-4">Enviar</button>
+                        <!-- <button class="btn form-btn-light mt-4" data-dismiss="modal">
+                            <img class="return-icon" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIuMDAxIDUxMi4wMDEiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMi4wMDEgNTEyLjAwMTsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxnPgoJPGc+CgkJPHBhdGggZD0iTTM4NC44MzQsMTgwLjY5OWMtMC42OTgsMC0zNDguNzMzLDAtMzQ4LjczMywwbDczLjMyNi04Mi4xODdjNC43NTUtNS4zMyw0LjI4OS0xMy41MDUtMS4wNDEtMTguMjYgICAgYy01LjMyOC00Ljc1NC0xMy41MDUtNC4yOS0xOC4yNiwxLjA0MWwtODIuNTgyLDkyLjU2Yy0xMC4wNTksMTEuMjc4LTEwLjA1OCwyOC4yODIsMC4wMDEsMzkuNTU3bDgyLjU4Miw5Mi41NjEgICAgYzIuNTU2LDIuODY1LDYuMDk3LDQuMzIzLDkuNjU0LDQuMzIzYzMuMDY0LDAsNi4xMzktMS4wODMsOC42MDYtMy4yODJjNS4zMy00Ljc1NSw1Ljc5NS0xMi45MywxLjA0MS0xOC4yNmwtNzMuMzI2LTgyLjE4OCAgICBjMCwwLDM0OC4wMzQsMCwzNDguNzMzLDBjNTUuODU4LDAsMTAxLjMsNDUuNDQ0LDEwMS4zLDEwMS4zcy00NS40NDMsMTAxLjMtMTAxLjMsMTAxLjNoLTYxLjU4ICAgIGMtNy4xNDMsMC0xMi45MzMsNS43OTEtMTIuOTMzLDEyLjkzM2MwLDcuMTQyLDUuNzksMTIuOTMzLDEyLjkzMywxMi45MzNoNjEuNThjNzAuMTIsMCwxMjcuMTY2LTU3LjA0NiwxMjcuMTY2LTEyNy4xNjYgICAgQzUxMiwyMzcuNzQ1LDQ1NC45NTQsMTgwLjY5OSwzODQuODM0LDE4MC42OTl6IiBmaWxsPSIjMDAwMDAwIi8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+                        </button> -->
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
